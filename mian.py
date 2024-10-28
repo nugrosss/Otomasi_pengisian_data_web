@@ -5,6 +5,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+import os
+from PIL import ImageGrab
+import datetime
 
 def fill_form():
     # Baca data dari file Excel
@@ -67,11 +70,11 @@ def fill_form():
         sex = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div/div/div[1]/div[2]/div/div[2]/div/div[2]/div/div[2]/div/select')
         sex.click()
         time.sleep(1)
-        if sex_value == 1 :
+        if sex_value == 0 :
             sex_cowo = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div/div/div[1]/div[2]/div/div[2]/div/div[2]/div/div[2]/div/select/option[1]')
             sex_cowo.click()
             print('cowo')
-        elif sex_value == 0 :
+        elif sex_value == 1 :
             sex_cewe = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div/div/div[1]/div[2]/div/div[2]/div/div[2]/div/div[2]/div/select/option[2]')
             sex_cewe.click()
             print('cewe')
@@ -305,26 +308,48 @@ def fill_form():
         botton10_next.click()
         time.sleep(2)
 
-        if page11_value == 1:
-            page11A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[11]/div/div[1]/div[2]/div/div/ul/li[1]/label')
-            page11A.click()  # Centang radio button untuk opsi A
+        if page12_value == 1:
+            page12A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[11]/div/div[1]/div[2]/div/div/ul/li[1]/label')
+            page12A.click()  # Centang radio button untuk opsi A
             print("Berhasil memilih opsi A di halaman kedua")
-        elif page11_value == 2:
-            page11B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[11]/div/div[1]/div[2]/div/div/ul/li[2]/label')
-            page11B.click()  # Centang radio button untuk opsi B
+        elif page12_value == 2:
+            page12B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[11]/div/div[1]/div[2]/div/div/ul/li[2]/label')
+            page12B.click()  # Centang radio button untuk opsi B
             print("Berhasil memilih opsi B di halaman kedua")
-        elif page11_value == 3:
-            page11C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[11]/div/div[1]/div[2]/div/div/ul/li[3]/label')
-            page11C.click()  # Centang radio button untuk opsi C
+        elif page12_value == 3:
+            page12C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[11]/div/div[1]/div[2]/div/div/ul/li[3]/label')
+            page12C.click()  # Centang radio button untuk opsi C
             print("Berhasil memilih opsi C di halaman kedua")
-        elif page11_value == 4:
-            page11D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[11]/div/div[1]/div[2]/div/div/ul/li[4]/label')
-            page11D.click()  # Centang radio button untuk opsi D
+        elif page12_value == 4:
+            page12D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[11]/div/div[1]/div[2]/div/div/ul/li[4]/label')
+            page12D.click()  # Centang radio button untuk opsi D
             print("Berhasil memilih opsi D di halaman kedua")
 
         botton10_next = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[11]/div/div[3]/ul/li[2]/button')
         botton10_next.click()
         time.sleep(2)
+
+
+        # Buat folder 'screenshots' jika belum ada
+        folder_name = 'Paktera'
+        if not os.path.exists(folder_name):
+            os.makedirs(folder_name)
+
+        # Ambil screenshot
+        screenshot = ImageGrab.grab()
+
+        # Dapatkan nama file dengan timestamp
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        file_name = f"screenshot_{timestamp}.png"
+
+        # Tentukan path lengkap untuk menyimpan screenshot
+        file_path = os.path.join(folder_name, file_name)
+
+        # Simpan screenshot
+        screenshot.save(file_path)
+        print(f"Screenshot disimpan sebagai: {file_path}")
+
+        time.sleep(3)
         
 
         
