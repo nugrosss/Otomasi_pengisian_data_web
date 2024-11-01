@@ -1,4 +1,5 @@
 #pip install -r requirements.txt
+#copy paste tulisan di atas ini tampa menggunakan #. tulis di cmd di diretory coba seleinum 
 
 
 opencv-python
