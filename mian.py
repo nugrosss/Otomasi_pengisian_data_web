@@ -70,14 +70,14 @@ def fill_form():
         sex = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div/div/div[1]/div[2]/div/div[2]/div/div[2]/div/div[2]/div/select')
         sex.click()
         time.sleep(1)
-        if sex_value == 0 :
+        if sex_value == 1 :
             sex_cowo = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div/div/div[1]/div[2]/div/div[2]/div/div[2]/div/div[2]/div/select/option[1]')
             sex_cowo.click()
-            print('cowo')
-        elif sex_value == 1 :
+            
+        elif sex_value == 0 :
             sex_cewe = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div/div/div[1]/div[2]/div/div[2]/div/div[2]/div/div[2]/div/select/option[2]')
             sex_cewe.click()
-            print('cewe')
+            
         time.sleep(1)
 
         botton1_mulai = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div/div/div[2]/ul/li/button')
@@ -91,19 +91,19 @@ def fill_form():
         if page2_value == 1:
             page2A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[1]/div/div[1]/div[2]/div/div[2]/ul/li[1]/label')
             page2A.click()  # Centang radio button untuk opsi A
-            print("Berhasil memilih opsi A di halaman kedua")
+            # print("Berhasil memilih opsi A di halaman kedua")
         elif page2_value == 2:
             page2B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[1]/div/div[1]/div[2]/div/div[2]/ul/li[2]/label')
             page2B.click()  # Centang radio button untuk opsi B
-            print("Berhasil memilih opsi B di halaman kedua")
+           
         elif page2_value == 3:
             page2C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[1]/div/div[1]/div[2]/div/div[2]/ul/li[3]/label')
             page2C.click()  # Centang radio button untuk opsi C
-            print("Berhasil memilih opsi C di halaman kedua")
+            
         elif page2_value == 4:
             page2D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[1]/div/div[1]/div[2]/div/div[2]/ul/li[4]/label')
             page2D.click()  # Centang radio button untuk opsi D
-            print("Berhasil memilih opsi D di halaman kedua")
+            
       
         botton2_next = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[1]/div/div[3]/ul/li/span')
         botton2_next.click()
@@ -114,19 +114,19 @@ def fill_form():
         if page3_value == 1:
             page3A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[2]/div/div[1]/div[2]/div/div[2]/ul/li[1]/label')
             page3A.click()  # Centang radio button untuk opsi A
-            print("Berhasil memilih opsi A di halaman kedua")
+            # print("Berhasil memilih opsi A di halaman kedua")
         elif page3_value == 2:
             page3B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[2]/div/div[1]/div[2]/div/div[2]/ul/li[2]/label')
             page3B.click()  # Centang radio button untuk opsi B
-            print("Berhasil memilih opsi B di halaman kedua")
+           
         elif page3_value == 3:
             page3C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[2]/div/div[1]/div[2]/div/div[2]/ul/li[3]/label')
             page3C.click()  # Centang radio button untuk opsi C
-            print("Berhasil memilih opsi C di halaman kedua")
+            
         elif page3_value == 4:
             page3D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[2]/div/div[1]/div[2]/div/div[2]/ul/li[4]/label')
             page3D.click()  # Centang radio button untuk opsi D
-            print("Berhasil memilih opsi D di halaman kedua")
+            
 
         time.sleep(2)
 
@@ -138,19 +138,19 @@ def fill_form():
         if page4_value == 1:
             page4A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[3]/div/div[1]/div[2]/div/div[2]/ul/li[1]/label')
             page4A.click()  # Centang radio button untuk opsi A
-            print("Berhasil memilih opsi A di halaman kedua")
+            # print("Berhasil memilih opsi A di halaman kedua")
         elif page4_value == 2:
             page4B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[3]/div/div[1]/div[2]/div/div[2]/ul/li[2]/label')
             page4B.click()  # Centang radio button untuk opsi B
-            print("Berhasil memilih opsi B di halaman kedua")
+           
         elif page4_value == 3:
             page4C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[3]/div/div[1]/div[2]/div/div[2]/ul/li[4]/label')
             page4C.click()  # Centang radio button untuk opsi C
-            print("Berhasil memilih opsi C di halaman kedua")
+            
         elif page4_value == 4:
             page4D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[3]/div/div[1]/div[2]/div/div[2]/ul/li[4]/label')
             page4D.click()  # Centang radio button untuk opsi D
-            print("Berhasil memilih opsi D di halaman kedua")
+            
 
         botton4_next = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[3]/div/div[3]/ul/li[2]/span')
         botton4_next.click()
@@ -160,19 +160,19 @@ def fill_form():
         if page5_value == 1:
             page5A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[4]/div/div[1]/div[2]/div/div[2]/ul/li[1]/label')
             page5A.click()  # Centang radio button untuk opsi A
-            print("Berhasil memilih opsi A di halaman kedua")
+            # print("Berhasil memilih opsi A di halaman kedua")
         elif page5_value == 2:
             page5B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[4]/div/div[1]/div[2]/div/div[2]/ul/li[2]/label')
             page5B.click()  # Centang radio button untuk opsi B
-            print("Berhasil memilih opsi B di halaman kedua")
+           
         elif page5_value == 3:
             page5C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[4]/div/div[1]/div[2]/div/div[2]/ul/li[3]/label')
             page5C.click()  # Centang radio button untuk opsi C
-            print("Berhasil memilih opsi C di halaman kedua")
+            
         elif page5_value == 4:
             page5D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[4]/div/div[1]/div[2]/div/div[2]/ul/li[4]/label')
             page5D.click()  # Centang radio button untuk opsi D
-            print("Berhasil memilih opsi D di halaman kedua")
+            
 
         botton5_next = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[4]/div/div[3]/ul/li[2]/span')
         botton5_next.click()
@@ -182,19 +182,19 @@ def fill_form():
         if page6_value == 1:
             page6A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[5]/div/div[1]/div[2]/div/div[2]/ul/li[1]/label')
             page6A.click()  # Centang radio button untuk opsi A
-            print("Berhasil memilih opsi A di halaman kedua")
+            # print("Berhasil memilih opsi A di halaman kedua")
         elif page6_value == 2:
             page6B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[5]/div/div[1]/div[2]/div/div[2]/ul/li[2]/label')
             page6B.click()  # Centang radio button untuk opsi B
-            print("Berhasil memilih opsi B di halaman kedua")
+           
         elif page6_value == 3:
             page6C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[5]/div/div[1]/div[2]/div/div[2]/ul/li[3]/label')
             page6C.click()  # Centang radio button untuk opsi C
-            print("Berhasil memilih opsi C di halaman kedua")
+            
         elif page6_value == 4:
             page6D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[5]/div/div[1]/div[2]/div/div[2]/ul/li[4]/label')
             page6D.click()  # Centang radio button untuk opsi D
-            print("Berhasil memilih opsi D di halaman kedua")
+            
 
         botton6_next = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[5]/div/div[3]/ul/li[2]/span')
         botton6_next.click()
@@ -204,19 +204,19 @@ def fill_form():
         if page7_value == 1:
             page7A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[6]/div/div[1]/div[2]/div/div[2]/ul/li[1]/label')
             page7A.click()  # Centang radio button untuk opsi A
-            print("Berhasil memilih opsi A di halaman kedua")
+            # print("Berhasil memilih opsi A di halaman kedua")
         elif page7_value == 2:
             page7B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[6]/div/div[1]/div[2]/div/div[2]/ul/li[2]/label')
             page7B.click()  # Centang radio button untuk opsi B
-            print("Berhasil memilih opsi B di halaman kedua")
+           
         elif page7_value == 3:
             page7C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[6]/div/div[1]/div[2]/div/div[2]/ul/li[3]/label')
             page7C.click()  # Centang radio button untuk opsi C
-            print("Berhasil memilih opsi C di halaman kedua")
+            
         elif page7_value == 4:
             page7D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[6]/div/div[1]/div[2]/div/div[2]/ul/li[4]/label')
             page7D.click()  # Centang radio button untuk opsi D
-            print("Berhasil memilih opsi D di halaman kedua")
+            
 
         botton7_next = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[6]/div/div[3]/ul/li[2]/span')
         botton7_next.click()
@@ -226,19 +226,19 @@ def fill_form():
         if page8_value == 1:
             page8A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[7]/div/div[1]/div[2]/div/div[2]/ul/li[1]/label')
             page8A.click()  # Centang radio button untuk opsi A
-            print("Berhasil memilih opsi A di halaman kedua")
+            # print("Berhasil memilih opsi A di halaman kedua")
         elif page8_value == 2:
             page8B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[7]/div/div[1]/div[2]/div/div[2]/ul/li[2]/label')
             page8B.click()  # Centang radio button untuk opsi B
-            print("Berhasil memilih opsi B di halaman kedua")
+           
         elif page8_value == 3:
             page8C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[7]/div/div[1]/div[2]/div/div[2]/ul/li[3]/label')
             page8C.click()  # Centang radio button untuk opsi C
-            print("Berhasil memilih opsi C di halaman kedua")
+            
         elif page8_value == 4:
             page8D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[7]/div/div[1]/div[2]/div/div[2]/ul/li[4]/label')
             page8D.click()  # Centang radio button untuk opsi D
-            print("Berhasil memilih opsi D di halaman kedua")
+            
 
         botton8_next = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[7]/div/div[3]/ul/li[2]/span')
         botton8_next.click()
@@ -248,19 +248,19 @@ def fill_form():
         if page9_value == 1:
             page9A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[8]/div/div[1]/div[2]/div/div[2]/ul/li[1]/label')
             page9A.click()  # Centang radio button untuk opsi A
-            print("Berhasil memilih opsi A di halaman kedua")
+            # print("Berhasil memilih opsi A di halaman kedua")
         elif page9_value == 2:
             page9B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[8]/div/div[1]/div[2]/div/div[2]/ul/li[2]/label')
             page9B.click()  # Centang radio button untuk opsi B
-            print("Berhasil memilih opsi B di halaman kedua")
+           
         elif page9_value == 3:
             page9C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[8]/div/div[1]/div[2]/div/div[2]/ul/li[3]/label')
             page9C.click()  # Centang radio button untuk opsi C
-            print("Berhasil memilih opsi C di halaman kedua")
+            
         elif page9_value == 4:
             page9D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[8]/div/div[1]/div[2]/div/div[2]/ul/li[4]/label')
             page9D.click()  # Centang radio button untuk opsi D
-            print("Berhasil memilih opsi D di halaman kedua")
+            
 
         botton9_next = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[8]/div/div[3]/ul/li[2]/span')
         botton9_next.click()
@@ -269,19 +269,19 @@ def fill_form():
         if page10_value == 1:
             page10A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[9]/div/div[1]/div[2]/div/div[2]/ul/li[1]/label')
             page10A.click()  # Centang radio button untuk opsi A
-            print("Berhasil memilih opsi A di halaman kedua")
+            # print("Berhasil memilih opsi A di halaman kedua")
         elif page10_value == 2:
             page10B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[9]/div/div[1]/div[2]/div/div[2]/ul/li[2]/label')
             page10B.click()  # Centang radio button untuk opsi B
-            print("Berhasil memilih opsi B di halaman kedua")
+           
         elif page10_value == 3:
             page10C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[9]/div/div[1]/div[2]/div/div[2]/ul/li[3]/label')
             page10C.click()  # Centang radio button untuk opsi C
-            print("Berhasil memilih opsi C di halaman kedua")
+            
         elif page10_value == 4:
             page10D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[9]/div/div[1]/div[2]/div/div[2]/ul/li[4]/label')
             page10D.click()  # Centang radio button untuk opsi D
-            print("Berhasil memilih opsi D di halaman kedua")
+            
 
         botton10_next = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[9]/div/div[3]/ul/li[2]/span')
         botton10_next.click()
@@ -290,19 +290,19 @@ def fill_form():
         if page11_value == 1:
             page11A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[10]/div/div[1]/div[2]/div/div/ul/li[1]/label')
             page11A.click()  # Centang radio button untuk opsi A
-            print("Berhasil memilih opsi A di halaman kedua")
+            # print("Berhasil memilih opsi A di halaman kedua")
         elif page11_value == 2:
             page11B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[10]/div/div[1]/div[2]/div/div/ul/li[2]/label')
             page11B.click()  # Centang radio button untuk opsi B
-            print("Berhasil memilih opsi B di halaman kedua")
+           
         elif page11_value == 3:
             page11C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[10]/div/div[1]/div[2]/div/div/ul/li[3]/label')
             page11C.click()  # Centang radio button untuk opsi C
-            print("Berhasil memilih opsi C di halaman kedua")
+            
         elif page11_value == 4:
             page11D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[10]/div/div[1]/div[2]/div/div/ul/li[4]/label')
             page11D.click()  # Centang radio button untuk opsi D
-            print("Berhasil memilih opsi D di halaman kedua")
+            
 
         botton10_next = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[10]/div/div[3]/ul/li[2]/span')
         botton10_next.click()
@@ -311,45 +311,58 @@ def fill_form():
         if page12_value == 1:
             page12A = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[11]/div/div[1]/div[2]/div/div/ul/li[1]/label')
             page12A.click()  # Centang radio button untuk opsi A
-            print("Berhasil memilih opsi A di halaman kedua")
+            # print("Berhasil memilih opsi A di halaman kedua")
         elif page12_value == 2:
             page12B = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[11]/div/div[1]/div[2]/div/div/ul/li[2]/label')
             page12B.click()  # Centang radio button untuk opsi B
-            print("Berhasil memilih opsi B di halaman kedua")
+           
         elif page12_value == 3:
             page12C = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[11]/div/div[1]/div[2]/div/div/ul/li[3]/label')
             page12C.click()  # Centang radio button untuk opsi C
-            print("Berhasil memilih opsi C di halaman kedua")
+            
         elif page12_value == 4:
             page12D = driver.find_element(By.XPATH, '//*[@id="wizard"]/div/div[11]/div/div[1]/div[2]/div/div/ul/li[4]/label')
             page12D.click()  # Centang radio button untuk opsi D
-            print("Berhasil memilih opsi D di halaman kedua")
+            # 
 
         botton10_next = driver.find_element(By.XPATH,'//*[@id="wizard"]/div/div[11]/div/div[3]/ul/li[2]/button')
         botton10_next.click()
-        time.sleep(2)
+        time.sleep(1)
 
+        # last_height = driver.execute_script("return document.body.scrollHeight")
+        # while True:
+        #         # Scroll ke bawah halaman
+        #         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                
+        #         # Tunggu halaman dimuat
+        #         time.sleep(2)
 
-        # Buat folder 'screenshots' jika belum ada
-        folder_name = 'Paktera'
-        if not os.path.exists(folder_name):
-            os.makedirs(folder_name)
+        # # Periksa tinggi halaman setelah scroll
+        #         new_height = driver.execute_script("return document.body.scrollHeight")
+        #         if new_height == last_height:
+        #             break  # Berhenti jika tidak ada pergerakan lebih lanjut
+        #         last_height = new_height
 
-        # Ambil screenshot
-        screenshot = ImageGrab.grab()
+        # # Buat folder 'screenshots' jika belum ada
+        # folder_name = 'tempera pacitan'
+        # if not os.path.exists(folder_name):
+        #     os.makedirs(folder_name)
 
-        # Dapatkan nama file dengan timestamp
-        timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        file_name = f"screenshot_{timestamp}.png"
+        # # Ambil screenshot
+        # screenshot = ImageGrab.grab()
 
-        # Tentukan path lengkap untuk menyimpan screenshot
-        file_path = os.path.join(folder_name, file_name)
+        # # Dapatkan nama file dengan timestamp
+        # timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        # file_name = f"screenshot_{timestamp}.png"
 
-        # Simpan screenshot
-        screenshot.save(file_path)
-        print(f"Screenshot disimpan sebagai: {file_path}")
+        # # Tentukan path lengkap untuk menyimpan screenshot
+        # file_path = os.path.join(folder_name, file_name)
 
-        time.sleep(3)
+        # # Simpan screenshot
+        # screenshot.save(file_path)
+        # print(f"Screenshot disimpan sebagai: {file_path}")
+
+        # time.sleep(1)
         
 
         
